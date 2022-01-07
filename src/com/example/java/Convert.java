@@ -4,9 +4,10 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class Convert {
-    public <K, V> Map<K, V> converta(K[] x, V[] y) {
-        int n1 = x.length;
-        int n2 = y.length;
+    int n1, n2;
+    public <K, V> Map<K, V> convertVarA(K[] x, V[] y) {
+        n1 = x.length;
+        n2 = y.length;
         TreeMap<K, V> map = new TreeMap<>();
         if (n1 >= n2) {
             try {
@@ -28,9 +29,9 @@ public class Convert {
         return map;
     }
 
-    public <K, V> Map<K, V> convertb(K[] x, V[] y) {
-        int n1 = x.length;
-        int n2 = y.length;
+    public <K, V> Map<K, V> convertVarB(K[] x, V[] y) {
+      n1 = x.length;
+      n2 = y.length;
         TreeMap<K, V> map = new TreeMap<>();
         if (n1 >= n2) {
             try {
