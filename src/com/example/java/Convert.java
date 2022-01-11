@@ -34,15 +34,12 @@ public class Convert {
       n2 = y.length;
         TreeMap<K, V> map = new TreeMap<>();
         if (n1 >= n2) {
-            try {
-                for (int i = 0; i < n1; i++) {
+                for (int i = 0; i < n2; i++) {
                     map.put(x[i], y[i]);
                 }
-            } catch (Exception e) {
                 for (int i = n2; i < n1; i++) {
                     map.put(x[i], null);
                 }
-            }
         } else {
             for (int i = 0; i < n1; i++) {
                 map.put(x[i], y[i]);
