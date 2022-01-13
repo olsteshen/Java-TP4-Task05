@@ -6,8 +6,8 @@ public class Main {
     public static void main(String[] args) {
         String[] arr1 = {"1", "2", "3", "4", "5", "6", "7"};
         String[] arr2 = {"Book1", "Book2", "Book3", "Book4", "Book5"};
-        Integer arr3[] = {1, 2, 3, 4};
-        Integer arr4[] = {100, 200, 300, 400, 500, 600, 700, 800};
+        Integer[] arr3 = {1, 2, 3, 4};
+        Integer[] arr4 = {100, 200, 300, 400, 500, 600, 700, 800};
 
         System.out.println("Array 1:" + Arrays.toString(arr1));
         System.out.println("Array 2:" + Arrays.toString(arr2));
@@ -24,8 +24,11 @@ public class Main {
 
         //variant 2: if K > V - "Value is not enough for map" error; if K < V - "Key is not enough for map" error
         System.out.println("==Variant 2==");
-        conv.convertVarA(arr1, arr2);
-        conv.convertVarA(arr3, arr4);
+        System.out.println("Map 3 (Array 3, Array 2):");
         conv.convertVarA(arr3, arr2);
+        System.out.println("Map 4 (Array 1, Array 2):");
+        conv.convertVarA(arr1, arr2);
+        System.out.println("Map 5 (Array 3, Array 4):");
+        conv.convertVarA(arr3, arr4);
     }
 }
