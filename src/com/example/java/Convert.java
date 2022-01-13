@@ -15,7 +15,7 @@ public class Convert {
                     map.put(x[i], y[i]);
                 }
             } catch (Exception e) {
-                System.out.println("\nValue is not enough for map");
+                System.out.println("Value is not enough for map");
             }
         } else {
             try {
@@ -23,7 +23,7 @@ public class Convert {
                     map.put(x[i], y[i]);
                 }
             } catch (Exception e) {
-                System.out.println("\nKey is not enough for map");
+                System.out.println("Key is not enough for map");
             }
         }
         return map;
